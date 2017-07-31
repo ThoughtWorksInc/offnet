@@ -1,0 +1,3 @@
+[submodule "OpenCL.scala"]
+	path = OpenCL.scala
+	url = https://github.com/ThoughtWorksInc/OpenCL.scala.git
