@@ -1,3 +1,6 @@
 [submodule "OpenCL.scala"]
 	path = OpenCL.scala
 	url = https://github.com/ThoughtWorksInc/OpenCL.scala.git
+[submodule "RAII.scala"]
+	path = RAII.scala
+	url = https://github.com/ThoughtWorksInc/RAII.scala.git
