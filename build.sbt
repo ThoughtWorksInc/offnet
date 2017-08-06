@@ -16,6 +16,8 @@ libraryDependencies += "com.dongxiguo" %% "fastring" % "0.3.1"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.3" % Test
 
+libraryDependencies += "org.lwjgl" % "lwjgl" % "3.1.2"
+
 libraryDependencies += "org.lwjgl" % "lwjgl" % "3.1.2" classifier {
   if (util.Properties.isMac) {
     "natives-macos"
