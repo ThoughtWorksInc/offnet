@@ -5,9 +5,9 @@ import java.util.concurrent.Semaphore
 
 import com.dongxiguo.fastring.Fastring.Implicits._
 import com.dongxiguo.fastring.Fastring
-import com.thoughtworks.opencl.Memory.Address
-import com.thoughtworks.opencl.OpenCL
-import com.thoughtworks.opencl.OpenCL.{Buffer, checkErrorCode}
+import com.thoughtworks.compute.Memory.Address
+import com.thoughtworks.compute.OpenCL
+import com.thoughtworks.compute.OpenCL.{Buffer, checkErrorCode}
 import eu.timepit.refined.api.Refined
 import eu.timepit.refined.numeric.{Negative, Positive}
 import org.lwjgl.opencl.CL10._

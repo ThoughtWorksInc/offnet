@@ -1,7 +1,7 @@
 dependsOn(
   ProjectRef(file("RAII.scala"), "AsynchronousSemaphoreJVM"),
-  ProjectRef(file("OpenCL.scala"), "OpenCLCodeGenerator"),
-  ProjectRef(file("OpenCL.scala"), "OpenCL")
+  ProjectRef(file("Compute.scala"), "OpenCLCodeGenerator"),
+  ProjectRef(file("Compute.scala"), "OpenCL")
 )
 
 libraryDependencies += "com.thoughtworks.raii" %% "asynchronous" % "2.0.0"
