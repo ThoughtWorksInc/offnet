@@ -1,0 +1,3 @@
+[submodule "DeepLearning.scala"]
+	path = DeepLearning.scala
+	url = https://github.com/ThoughtWorksInc/DeepLearning.scala.git
