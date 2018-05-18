@@ -85,10 +85,7 @@ channels:
 # Examples: "linux-64", "osx-64", "win-64"
 # Use `anaconda-project add-platforms` to add platforms.
 #
-platforms:
-- linux-64
-- osx-64
-- win-64
+platforms: []
 
 
 
@@ -99,8 +96,19 @@ platforms:
 # Use `anaconda-project add-env-spec` to add environment specs.
 #
 env_specs:
+  gpu:
+    packages:
+    - tensorflow-gpu
+    channels:
+    - aaronzs
+    platforms:
+    - linux-64
+    - win-64
   default:
     description: Default environment spec for running commands
     packages: []
     channels: []
-    platforms: []
+    platforms:
+    - linux-64
+    - osx-64
+    - win-64
