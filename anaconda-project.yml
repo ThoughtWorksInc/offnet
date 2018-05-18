@@ -34,7 +34,8 @@ description:
 #
 # commands: {spyder: {unix: spyder --new-instance --project="$PROJECT_DIR" --workdir="$PROJECT_DIR",
 #     env_spec: development}}
-commands: {offnet: {notebook: offnet.ipynb, env_spec: default}}
+commands: {offnet: {notebook: offnet.ipynb, env_spec: default}, gpu-offnet.ipynb: {
+    notebook: offnet.ipynb, env_spec: gpu}}
 
 
 #
@@ -74,6 +75,7 @@ packages:
 - numpy
 - tensorflow
 
+- notebook
 channels:
 - conda-forge
 - default

@@ -15,7 +15,7 @@ locking_enabled: true
 env_specs:
   default:
     locked: true
-    env_spec_hash: 5319860fd1e352a768b752116f53d62a7b4e506e
+    env_spec_hash: e8feb0ecd3734977c8a295507be79f19ff5139e4
     platforms:
     - linux-64
     - osx-64
@@ -164,7 +164,7 @@ env_specs:
       - zlib=1.2.11=vc14_0
   gpu:
     locked: true
-    env_spec_hash: a3fda05c16bf616b0f7e5c72328e733393f47e41
+    env_spec_hash: 8fa3e9abc5d99267cd289c53040b80ac67f45e27
     platforms:
     - linux-64
     - win-64
