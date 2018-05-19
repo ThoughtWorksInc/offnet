@@ -34,7 +34,9 @@ description:
 #
 # commands: {spyder: {unix: spyder --new-instance --project="$PROJECT_DIR" --workdir="$PROJECT_DIR",
 #     env_spec: development}}
-commands: {offnet: {notebook: offnet.ipynb, env_spec: default}}
+commands:
+  jupyter:
+    unix: socat UNIX-LISTEN:jupyter.sock,fork,reuseaddr TCP4:127.0.0.1:8851 & jupyter notebook --ip=127.0.0.1 --port=8851
 
 
 #
@@ -73,6 +75,8 @@ packages:
 - jupyter
 - numpy
 - tensorflow
+- notebook
+- socat
 
 channels:
 - conda-forge
@@ -85,10 +89,7 @@ channels:
 # Examples: "linux-64", "osx-64", "win-64"
 # Use `anaconda-project add-platforms` to add platforms.
 #
-platforms:
-- linux-64
-- osx-64
-- win-64
+platforms: []
 
 
 
@@ -99,8 +100,17 @@ platforms:
 # Use `anaconda-project add-env-spec` to add environment specs.
 #
 env_specs:
+  gpu:
+    packages:
+    - tensorflow-gpu
+    channels:
+    - aaronzs
+    platforms:
+    - linux-64
   default:
     description: Default environment spec for running commands
     packages: []
     channels: []
-    platforms: []
+    platforms:
+    - linux-64
+    - osx-64
