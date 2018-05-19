@@ -35,8 +35,12 @@ description:
 # commands: {spyder: {unix: spyder --new-instance --project="$PROJECT_DIR" --workdir="$PROJECT_DIR",
 #     env_spec: development}}
 commands:
+  tensorboard:
+    unix: socat UNIX-LISTEN:tensorboard.sock,fork,reuseaddr TCP4:127.0.0.1:6026 &
+      tensorboard --port=6026 --host=127.0.0.1 --debugger_port=6027
   jupyter:
-    unix: socat UNIX-LISTEN:jupyter.sock,fork,reuseaddr TCP4:127.0.0.1:8851 & jupyter notebook --ip=127.0.0.1 --port=8851
+    unix: socat UNIX-LISTEN:jupyter.sock,fork,reuseaddr TCP4:127.0.0.1:8851 & jupyter
+      notebook --ip=127.0.0.1 --port=8851
 
 
 #
@@ -74,14 +78,14 @@ packages:
 - python
 - jupyter
 - numpy
-- tensorflow
+- tensorflow >= 1.8.0
 - notebook
 - socat
-
+- mmh3
 channels:
 - conda-forge
 - default
-
+- keiserlab
 
 
 #
@@ -102,7 +106,7 @@ platforms: []
 env_specs:
   gpu:
     packages:
-    - tensorflow-gpu
+    - tensorflow-gpu >= 1.8.0
     channels:
     - aaronzs
     platforms:

@@ -15,7 +15,7 @@ locking_enabled: true
 env_specs:
   default:
     locked: true
-    env_spec_hash: a3a8923cd6eafa0352f3e36e7cf9ec193bfbc0b1
+    env_spec_hash: 910c4c10adb796757fde7cbd416c2b60b76c9eac
     platforms:
     - linux-64
     - osx-64
@@ -53,6 +53,7 @@ env_specs:
       - markdown=2.6.11=py_0
       - markupsafe=1.0=py36_0
       - mistune=0.8.3=py36_1
+      - mmh3=2.4=py36_0
       - nbconvert=5.3.1=py_1
       - nbformat=4.4.0=py36_0
       - ncurses=5.9=10
@@ -133,7 +134,7 @@ env_specs:
       - webencodings=0.5.1=py36_0
   gpu:
     locked: true
-    env_spec_hash: 7c94039a8d70003dcbadb9b9f3d7be7805edb480
+    env_spec_hash: 70191e15ad2ccd907918ca0ed9d57d6bc5a07389
     platforms:
     - linux-64
     packages:
@@ -186,6 +187,7 @@ env_specs:
       - markdown=2.6.11=py_0
       - markupsafe=1.0=py36_0
       - mistune=0.8.3=py36_1
+      - mmh3=2.4=py36_0
       - nbconvert=5.3.1=py_1
       - nbformat=4.4.0=py36_0
       - ncurses=5.9=10
