@@ -31,9 +31,6 @@ description:
 #
 # In the commands section, list your runnable scripts, notebooks, and other code.
 # Use `anaconda-project add-command` to add commands.
-#
-# commands: {spyder: {unix: spyder --new-instance --project="$PROJECT_DIR" --workdir="$PROJECT_DIR",
-#     env_spec: development}}
 commands:
   tensorboard:
     unix: socat UNIX-LISTEN:tensorboard.sock,fork,reuseaddr TCP4:127.0.0.1:6026 &
