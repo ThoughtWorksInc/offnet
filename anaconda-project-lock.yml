@@ -15,7 +15,7 @@ locking_enabled: true
 env_specs:
   default:
     locked: true
-    env_spec_hash: 910c4c10adb796757fde7cbd416c2b60b76c9eac
+    env_spec_hash: 252bf1b30d576ea943a27dee72d9267d0f9fef96
     platforms:
     - linux-64
     - osx-64
@@ -134,7 +134,7 @@ env_specs:
       - webencodings=0.5.1=py36_0
   gpu:
     locked: true
-    env_spec_hash: 70191e15ad2ccd907918ca0ed9d57d6bc5a07389
+    env_spec_hash: b0227b10812163f71773ad03d049a2706df345f5
     platforms:
     - linux-64
     packages:
