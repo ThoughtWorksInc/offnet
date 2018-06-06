@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-docker run \
-    --runtime nvidia \
+nvidia-docker run \
     --volume /etc/passwd:/etc/passwd:ro \
     --user "$(id -u)" \
     --volume "$HOME:$HOME" \
