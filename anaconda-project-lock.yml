@@ -15,7 +15,7 @@ locking_enabled: true
 env_specs:
   default:
     locked: true
-    env_spec_hash: 252bf1b30d576ea943a27dee72d9267d0f9fef96
+    env_spec_hash: ca6cef02fcbb8d2138a73b99cc60949cea58ee84
     platforms:
     - linux-64
     - osx-64
@@ -37,6 +37,7 @@ env_specs:
       - ipython=6.4.0=py36_0
       - ipython_genutils=0.2.0=py36_0
       - ipywidgets=7.2.1=py36_1
+      - iteration_utilities=0.7.0=py36_0
       - jedi=0.12.0=py36_0
       - jinja2=2.10=py36_0
       - jpeg=9b=2
@@ -134,12 +135,11 @@ env_specs:
       - webencodings=0.5.1=py36_0
   gpu:
     locked: true
-    env_spec_hash: c7d7f54c5d338a791522a53de4917c71ebd40bbb
+    env_spec_hash: 00ad185b7be5d0d72b8d19124e65ef923c72d958
     platforms:
     - linux-64
     packages:
       linux-64:
-      - _tflow_180_select=1.0=gpu
       - absl-py=0.2.2=py_0
       - astor=0.6.2=py_0
       - backcall=0.1.0=py_0
@@ -166,6 +166,7 @@ env_specs:
       - ipython=6.4.0=py36_0
       - ipython_genutils=0.2.0=py36_0
       - ipywidgets=7.2.1=py36_1
+      - iteration_utilities=0.7.0=py36_0
       - jedi=0.12.0=py36_0
       - jinja2=2.10=py36_0
       - jpeg=9b=2
@@ -222,7 +223,7 @@ env_specs:
       - socat=1.7.3.2=0
       - sqlite=3.13.0=1
       - tensorboard=1.8.0=py36_1
-      - tensorflow-gpu=1.8.0=h7b35bdc_0
+      - tensorflow-gpu=1.8.0=py36_0
       - tensorflow=1.8.0=py36_1
       - termcolor=1.1.0=py36_1
       - terminado=0.8.1=py36_0

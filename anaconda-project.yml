@@ -79,6 +79,7 @@ packages:
 - notebook
 - socat
 - mmh3
+- iteration_utilities
 channels:
 - conda-forge
 - default
@@ -103,8 +104,8 @@ platforms: []
 env_specs:
   gpu:
     packages:
-    - tensorflow-gpu >= 1.8.0
-    channels: []
+    - tensorflow-gpu
+    channels: [aaronzs]
     platforms:
     - linux-64
   default:
