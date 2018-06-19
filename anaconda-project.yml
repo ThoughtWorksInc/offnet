@@ -32,7 +32,10 @@ description:
 # In the commands section, list your runnable scripts, notebooks, and other code.
 # Use `anaconda-project add-command` to add commands.
 #
-commands: {}
+commands:
+  jupyter:
+    unix: socat UNIX-LISTEN:jupyter.sock,fork,reuseaddr TCP4:127.0.0.1:8851 & jupyter
+      notebook --ip=127.0.0.1 --port=8851
 
 
 
