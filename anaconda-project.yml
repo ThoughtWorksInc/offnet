@@ -75,11 +75,10 @@ packages:
 - mkl
 - pytorch
 - torchvision
-
-
-
 - jupyter
 - socat
+
+
 #
 # In the channels section, list any Conda channel URLs to be searched
 # for packages.
@@ -90,12 +89,11 @@ packages:
 #    - mychannel
 #
 channels:
-- anaconda
 - pytorch
-
-
-
 - conda-forge
+
+
+
 #
 # In the platforms section, list platforms the project should work on
 # Examples: "linux-64", "osx-64", "win-64"
