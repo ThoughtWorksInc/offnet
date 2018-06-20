@@ -12,13 +12,10 @@ locking_enabled: true
 
 
 
-#
-# A key goes in here for each env spec.
-#
 env_specs:
   default:
     locked: true
-    env_spec_hash: 4cfcddf6f1856f4c448245b81a29a1099c5c4bfc
+    env_spec_hash: d66cc6c754995dbc8ad029b3797392b9365732e4
     platforms:
     - linux-64
     - osx-64
@@ -133,5 +130,3 @@ env_specs:
       - pytorch=0.4.0=py36_cuda0.0_cudnn0.0_1
       - qt=5.6.2=h9e3eb04_4
       - webencodings=0.5.1=py36_0
-
-

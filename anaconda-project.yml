@@ -72,7 +72,6 @@ downloads: {}
 #
 packages:
 - python
-- mkl
 - pytorch
 - torchvision
 - jupyter
@@ -91,7 +90,7 @@ packages:
 channels:
 - pytorch
 - conda-forge
-
+- anaconda
 
 
 #
