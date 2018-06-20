@@ -78,6 +78,7 @@ packages:
 - socat
 
 
+- matplotlib
 #
 # In the channels section, list any Conda channel URLs to be searched
 # for packages.
