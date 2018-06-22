@@ -34,7 +34,7 @@ description:
 commands:
   tensorboard:
     unix: socat UNIX-LISTEN:tensorboard.sock,fork,reuseaddr TCP4:127.0.0.1:6026 &
-      tensorboard --port=6026 --host=127.0.0.1 --debugger_port=6027 --logdir=.
+      tensorboard --port=6026 --host=127.0.0.1 --debugger_port=6027 --logdir=models
   jupyter:
     unix: socat UNIX-LISTEN:jupyter.sock,fork,reuseaddr TCP4:127.0.0.1:8851 & jupyter
       notebook --ip=127.0.0.1 --port=8851
