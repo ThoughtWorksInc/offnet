@@ -77,7 +77,6 @@ packages:
 - numpy
 - tensorflow >= 1.8.0
 - notebook
-- socat
 - mmh3
 - iteration_utilities
 channels:

@@ -6,5 +6,5 @@ nvidia-docker run \
     --workdir /mnt/project-root \
     --tty --interactive \
     --init \
-    popatry/anaconda-cuda:python3-miniconda-cuda9.0-cudnn7-runtime-ubuntu16.04-anaconda-project \
+    popatry/anaconda-cuda:python3-miniconda-cuda9.0-cudnn7-runtime-ubuntu16.04-anaconda-project-socat \
     su "$(whoami)"

@@ -15,7 +15,7 @@ locking_enabled: true
 env_specs:
   default:
     locked: true
-    env_spec_hash: ca6cef02fcbb8d2138a73b99cc60949cea58ee84
+    env_spec_hash: 8dc5ed5aeda85ff8b42e2d55c915236b61cb09a8
     platforms:
     - linux-64
     - osx-64
@@ -46,7 +46,6 @@ env_specs:
       - jupyter_client=5.2.3=py36_0
       - jupyter_console=5.2.0=py36_0
       - jupyter_core=4.4.0=py_0
-      - libiconv=1.15=0
       - libpng=1.6.34=0
       - libprotobuf=3.5.2=0
       - libsodium=1.0.16=0
@@ -59,7 +58,7 @@ env_specs:
       - nbformat=4.4.0=py36_0
       - ncurses=5.9=10
       - notebook=5.5.0=py36_0
-      - numpy=1.14.4=py36_blas_openblash24bf2e0_200
+      - numpy=1.14.5=py36_blas_openblash24bf2e0_200
       - openblas=0.2.20=8
       - openssl=1.0.2o=0
       - pandocfilters=1.4.2=py36_0
@@ -73,23 +72,22 @@ env_specs:
       - pygments=2.2.0=py36_0
       - pyqt=5.6.0=py36_5
       - python-dateutil=2.7.3=py_0
-      - python=3.6.3=1
+      - python=3.6.5=1
       - pyzmq=17.0.0=py36_4
       - qtconsole=4.3.1=py36_0
-      - readline=6.2=0
+      - readline=7.0=0
       - send2trash=1.5.0=py_0
       - setuptools=39.2.0=py36_0
       - simplegeneric=0.8.1=py36_0
       - sip=4.18=py36_1
       - six=1.11.0=py36_1
-      - socat=1.7.3.2=0
-      - sqlite=3.13.0=1
+      - sqlite=3.20.1=2
       - tensorboard=1.8.0=py36_1
       - tensorflow=1.8.0=py36_1
       - termcolor=1.1.0=py36_1
       - terminado=0.8.1=py36_0
       - testpath=0.3.1=py36_0
-      - tk=8.5.19=2
+      - tk=8.6.7=0
       - tornado=5.0.2=py36_0
       - traitlets=4.3.2=py36_0
       - wcwidth=0.1.7=py36_0
@@ -102,32 +100,34 @@ env_specs:
       linux-64:
       - dbus=1.13.0=h3a4f0e9_0
       - expat=2.2.5=0
-      - fontconfig=2.12.1=4
-      - freetype=2.7=1
+      - fontconfig=2.12.6=0
+      - freetype=2.8.1=0
       - gettext=0.19.8.1=0
       - glib=2.55.0=0
       - gmp=6.1.2=0
-      - grpcio=1.12.0=py36hdbcaa40_0
+      - grpcio=1.12.1=py36hdbcaa40_0
       - gst-plugins-base=1.8.0=0
       - gstreamer=1.8.0=1
       - libffi=3.2.1=3
       - libgcc-ng=7.2.0=hdf63c60_3
       - libgcc=7.2.0=h69d50b8_2
       - libgfortran=3.0.0=1
+      - libiconv=1.15=h470a237_1
       - libstdcxx-ng=7.2.0=hdf63c60_3
       - libxcb=1.13=0
       - pandoc=2.2.1=0
       - pcre=8.41=1
-      - qt=5.6.2=3
+      - qt=5.6.2=7
       - webencodings=0.5=py36_0
       - xorg-libxau=1.0.8=3
       - xorg-libxdmcp=1.1.2=3
       osx-64:
       - appnope=0.1.0=py36_0
       - clangdev=6.0.0=default_0
-      - grpcio=1.12.0=py36hd9629dc_0
+      - grpcio=1.12.1=py36hd9629dc_0
       - libcxx=6.0.0=0
       - libgfortran=3.0.0=0
+      - libiconv=1.15=0
       - llvm-meta=6.0.0=0
       - llvmdev=6.0.0=default_3
       - pandoc=2.2.1=hde52d81_0
@@ -135,7 +135,7 @@ env_specs:
       - webencodings=0.5.1=py36_0
   gpu:
     locked: true
-    env_spec_hash: 00ad185b7be5d0d72b8d19124e65ef923c72d958
+    env_spec_hash: 55ad389b50ed388aa5ec47ae4e6fd6b0c00d84a6
     platforms:
     - linux-64
     packages:
@@ -151,13 +151,13 @@ env_specs:
       - decorator=4.3.0=py_0
       - entrypoints=0.2.3=py36_1
       - expat=2.2.5=0
-      - fontconfig=2.12.1=4
-      - freetype=2.7=1
+      - fontconfig=2.12.6=0
+      - freetype=2.8.1=0
       - gast=0.2.0=py_0
       - gettext=0.19.8.1=0
       - glib=2.55.0=0
       - gmp=6.1.2=0
-      - grpcio=1.12.0=py36hdbcaa40_0
+      - grpcio=1.12.1=py36hdbcaa40_0
       - gst-plugins-base=1.8.0=0
       - gstreamer=1.8.0=1
       - html5lib=0.9999999=py36_0
@@ -179,7 +179,7 @@ env_specs:
       - libgcc-ng=7.2.0=hdf63c60_3
       - libgcc=7.2.0=h69d50b8_2
       - libgfortran=3.0.0=1
-      - libiconv=1.15=0
+      - libiconv=1.15=h470a237_1
       - libpng=1.6.34=0
       - libprotobuf=3.5.2=0
       - libsodium=1.0.16=0
@@ -194,7 +194,7 @@ env_specs:
       - nbformat=4.4.0=py36_0
       - ncurses=5.9=10
       - notebook=5.5.0=py36_0
-      - numpy=1.14.4=py36_blas_openblash24bf2e0_200
+      - numpy=1.14.5=py36_blas_openblash24bf2e0_200
       - openblas=0.2.20=8
       - openssl=1.0.2o=0
       - pandoc=2.2.1=0
@@ -210,25 +210,24 @@ env_specs:
       - pygments=2.2.0=py36_0
       - pyqt=5.6.0=py36_5
       - python-dateutil=2.7.3=py_0
-      - python=3.6.3=1
+      - python=3.6.5=1
       - pyzmq=17.0.0=py36_4
-      - qt=5.6.2=3
+      - qt=5.6.2=7
       - qtconsole=4.3.1=py36_0
-      - readline=6.2=0
+      - readline=7.0=0
       - send2trash=1.5.0=py_0
       - setuptools=39.2.0=py36_0
       - simplegeneric=0.8.1=py36_0
       - sip=4.18=py36_1
       - six=1.11.0=py36_1
-      - socat=1.7.3.2=0
-      - sqlite=3.13.0=1
+      - sqlite=3.20.1=2
       - tensorboard=1.8.0=py36_1
       - tensorflow-gpu=1.8.0=py36_0
       - tensorflow=1.8.0=py36_1
       - termcolor=1.1.0=py36_1
       - terminado=0.8.1=py36_0
       - testpath=0.3.1=py36_0
-      - tk=8.5.19=2
+      - tk=8.6.7=0
       - tornado=5.0.2=py36_0
       - traitlets=4.3.2=py36_0
       - wcwidth=0.1.7=py36_0
